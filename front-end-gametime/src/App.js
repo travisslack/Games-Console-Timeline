@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
+
 class App extends Component {
 
   constructor() {
@@ -36,7 +37,7 @@ class App extends Component {
           <h1 className="App-title">Games Consoles</h1>
         </header>
         <section>
-        
+          
         </section>
       </div>
     );
