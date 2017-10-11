@@ -7,8 +7,8 @@ return(
     <ol>
     <ul>
     <div className="detail">
-        <li>{props.console.title}</li>
-        <li>{props.console.released}</li>
+        <h1>{props.console.title}</h1>
+        <h1>{props.console.released}</h1>
         <div className="arrows">
     <button className="arrow arrow__prev disabled" disabled>
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow"/>
