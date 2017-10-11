@@ -9,7 +9,7 @@ const Timeline = (props) => {
   }
 
   const consoleNodes = props.consoles.map( (console) => {
-    return <TimelineDetail console={console} key={console.released}  />
+    return <TimelineDetail changeConsole={props.changeConsole} console={console} key={console.released}  />
 })
 
   return (

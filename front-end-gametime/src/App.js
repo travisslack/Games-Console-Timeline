@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Timeline from './Timeline'
+import ConsoleInformation from './ConsoleInformation';
 
 
 class App extends Component {
@@ -9,8 +10,8 @@ class App extends Component {
   constructor() {
     super();
     this.state= {
-      consoles: []
-      // selectedConsole: null;
+      consoles: [],
+      selectedConsole: null
     }
   }
 
@@ -28,9 +29,11 @@ class App extends Component {
     xhr.send();
   }
 
-  // changeConsole(console) {
-  //   this.setState( { selectedConsole: console } )
-  // }
+  changeConsole(console) {
+    this.setState( { selectedConsole: console } )
+  
+    
+  }
   
 
 
@@ -42,7 +45,7 @@ class App extends Component {
           <h1 className="App-title">Games Consoles</h1>
         </header>
       <section>
-        <Timeline consoles={this.state.consoles} />
+        <Timeline changeConsole={this.changeConsole.bind(this)} consoles={this.state.consoles} />
       </section>
       <div className="arrows">
         <button className="arrow arrow__prev disabled" disabled>
@@ -52,9 +55,9 @@ class App extends Component {
           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow"/>
         </button>
       </div>
-      {/* <section> */}
-      {/* <Information consoles={this.state.consoles} /> */}
-      {/* </section> */}
+      <div> 
+      <ConsoleInformation console={this.state.selectedConsole} /> 
+      </div> 
 
       </section>
     );
