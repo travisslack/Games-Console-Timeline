@@ -1,5 +1,6 @@
 import React from 'react';
-import TimelineDetail from './TimelineDetail'
+import TimelineDetail from './TimelineDetail';
+// import InformationDetail from './InformationDetail';
 
 const Timeline = (props) => {
     

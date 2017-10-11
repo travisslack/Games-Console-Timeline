@@ -11,13 +11,14 @@
   /* background-color: black; */
   height: 150px;
   padding: 75px;
-  color: black;
+  color: white;
 }
 
 .App-title {
   font-size: 2.5em;
-  /* animation: App-title-spin infinite 50s linear; */
-  height: 10px;
+  /* animation: App-title-spin infinite 0s linear; */
+  height: 100px;
+  text-align: left;
 }
 
 .App-intro {

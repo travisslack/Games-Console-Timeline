@@ -10,6 +10,7 @@ class App extends Component {
     super();
     this.state= {
       consoles: []
+      // selectedConsole: null;
     }
   }
 
@@ -26,6 +27,10 @@ class App extends Component {
     });
     xhr.send();
   }
+
+  // changeConsole(console) {
+  //   this.setState( { selectedConsole: console } )
+  // }
   
 
 
@@ -36,17 +41,21 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Games Consoles</h1>
         </header>
-        <section>
-          <Timeline consoles={this.state.consoles} />
-        </section>
-        <div className="arrows">
-    <button className="arrow arrow__prev disabled" disabled>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow"/>
-    </button>
-    <button className="arrow arrow__next">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow"/>
-    </button>
-    </div>
+      <section>
+        <Timeline consoles={this.state.consoles} />
+      </section>
+      <div className="arrows">
+        <button className="arrow arrow__prev disabled" disabled>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow"/>
+        </button>
+        <button className="arrow arrow__next">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow"/>
+        </button>
+      </div>
+      {/* <section> */}
+      {/* <Information consoles={this.state.consoles} /> */}
+      {/* </section> */}
+
       </section>
     );
   }
