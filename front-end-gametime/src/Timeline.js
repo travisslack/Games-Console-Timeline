@@ -14,7 +14,9 @@ const Timeline = (props) => {
   return (
     
     <section className="timeline">
+    <ol>
         { consoleNodes } 
+    </ol>
     </section>
   )
 }
