@@ -1,6 +1,6 @@
 Console.delete_all();
 
-c1 = Console.create( { title: "Atari 2600", released: 1977, image: "", description: "" } )
+c1 = Console.create( { title: "Atari 2600", released: 1977, image: "", description: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum" } )
 c2 = Console.create( { title: "Nintendo ES", released: 1983, image: "", description: "" } )
 c3 = Console.create( { title: "Sega Genesis", released: 1988, image: "", description: "" } )
 c4 = Console.create( { title: "Super Nintendo ES", released: 1990, image: "", description: "" } )
