@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import ConsoleListing from './ConsoleListing';
+import Timeline from './Timeline'
 
 
 class App extends Component {
@@ -9,8 +9,7 @@ class App extends Component {
   constructor() {
     super();
     this.state= {
-      consoles: [],
-      selectedConsole: null
+      consoles: []
     }
   }
 
@@ -35,11 +34,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h1 className="App-title">Games Consoles</h1>
         </header>
         <section>
-          <ConsoleListing consoles={this.state.consoles}/>
+        <Timeline consoles={this.state.consoles} />
         </section>
       </div>
     );
