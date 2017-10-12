@@ -86,8 +86,8 @@ body {
 .timeline ol li div {
   position: absolute;
   left: calc(100% + 7px);
-  width: 280px;
-  padding: 15px;
+  width: 200px;
+  /* padding: 15px; */
   font-size: 1rem;
   white-space: normal;
   color: black;
@@ -126,7 +126,7 @@ body {
 } */
 
 .timeline h1 {
-  display: block;
+  /* display: block; */
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 5px;
@@ -134,7 +134,7 @@ body {
 
 /* timeline arrows */
 
-.timeline .arrows {
+/* .timeline .arrows {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -151,7 +151,19 @@ body {
 .timeline .arrows img {
   width: 45px;
   height: 45px;
+} */
+
+/* description box */
+
+li .information {
+  background-color: transparent;
+  width: 800px;
+  border: 2px solid black;
+  padding: 25px;
+  margin: 100px;
 }
+
+
 
 
 

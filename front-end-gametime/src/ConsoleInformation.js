@@ -10,7 +10,6 @@ const ConsoleInformation = (props) => {
     return (
         <li>
         <div className="information">
-            <h1>{props.console.title}</h1>
             <h1>{props.console.description}</h1>
             <h1>{props.console.image}</h1>
         </div>
